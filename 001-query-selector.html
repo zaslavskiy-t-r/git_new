@@ -7,108 +7,110 @@
   <title>querySelector #1</title>
 
   <style>
-      body {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-      .test {
-          color: red;
-      }
+    .test {
+      color: red;
+    }
   </style>
 </head>
 
 <body>
 
-<div>
-  asdfsadgfasdgfzxd
+  <div>
+    asdfsadgfasdgfzxd
 
-  aSDfasf
+    aSDfasf
 
-  asdf
-  cdfgh
-  fg
-  ghuk
+    asdf
+    cdfgh
+    fg
+    ghuk
 
-  <p class="test1"> zxdfgsdfgsdfg </p>
-  <p class="test"> zxdfgsdfgsdfg </p>
+    <p class="test1"> zxdfgsdfgsdfg </p>
+    <p class="test"> zxdfgsdfgsdfg </p>
 
-  <p> zxdfgsdfgsdfg </p>
-  <p> zxdfgsdfgsdfg </p>
-  <p class="test1"> zxdfgsdfgsdfg </p>
-  //sdfgsfgsdfg
-
-
-</div>
-<p class="p" id="first" >
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, numquam unde. Aut dolorum in, quia
-  numquam error recusandae est odio nesciunt ut illum blanditiis illo minima, officiis mollitia eaque fugit.
-</p>
-<!--<p class="p">-->
-<!--  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum corrupti sapiente, qui eius fuga nisi. Sequi-->
-<!--  quibusdam sapiente deserunt fuga dolorem commodi perspiciatis, cum soluta possimus quaerat. Labore, eveniet-->
-<!--  iusto.-->
-<!--</p>-->
-
-<div>First div</div>
-
-<script>
-  // document - позволяет получить доступ к DOM дереву
-  // querySelector - производит поиск по DOM дереву и возвращает первый элемент, подходящий под CSS селектор, указанный в параметрах
-
-  console.log(document);
-
-  let paragraph = document.querySelector("#first");   // находим элемент с id="first"
-  let paragraph1 = document.querySelector(".p");
-  let paragraph11 = document.querySelector(".test, .test1");   // находим элемент с классом test или test1, найдется первый в разметке
-  let paragraph2 = document.querySelectorAll(".p");   // находим элемент с id="first"
-  let pGet = document.getElementById("first");
-  let pGet1 = document.getElementsByClassName("p");
+    <p> zxdfgsdfgsdfg </p>
+    <p> zxdfgsdfgsdfg </p>
+    <p class="test1"> zxdfgsdfgsdfg </p>
+    //sdfgsfgsdfg
 
 
-  console.log(paragraph11);
+  </div>
+  <p class="p" id="first">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, numquam unde. Aut dolorum in, quia
+    numquam error recusandae est odio nesciunt ut illum blanditiis illo minima, officiis mollitia eaque fugit.
+  </p>
+  <p class="new">
+    Lorem ipsum dolor sit amet.
+  </p>
+  <!--<p class="p">-->
+  <!--  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum corrupti sapiente, qui eius fuga nisi. Sequi-->
+  <!--  quibusdam sapiente deserunt fuga dolorem commodi perspiciatis, cum soluta possimus quaerat. Labore, eveniet-->
+  <!--  iusto.-->
+  <!--</p>-->
 
-  // node
+  <div>First div</div>
 
-  console.log(paragraph);
+  <script>
+    // document - позволяет получить доступ к DOM дереву
+    // querySelector - производит поиск по DOM дереву и возвращает первый элемент, подходящий под CSS селектор, указанный в параметрах
 
-  console.log(paragraph1);
-  console.log(paragraph2);
-  console.log(paragraph2[0]);
-  console.log(pGet);
+    console.log(document);
 
-
-
-  paragraph.style.border = "2px solid red";           // меняем стили для элемента, задавая для свойства border значение 2 "px solid red"
-
-
-  let divs = document.getElementsByTagName('div');
-
-  let arr1 = [1,2];
-
-  arr1 = [...paragraph2];
-  dfgsdf
-
-
-  xfghsfg
-
-  console.log(arr1);
-
-  // let o = {
-  //   : "qw"
-  // }
-
-  console.log(divs);
-
-  let arr = [...divs];
-
-  console.log(arr);
+    let paragraph = document.querySelector("#first");   // находим элемент с id="first"
+    let paragraph1 = document.querySelector(".p");
+    let paragraph11 = document.querySelector(".test, .test1");   // находим элемент с классом test или test1, найдется первый в разметке
+    let paragraph2 = document.querySelectorAll(".p");   // находим элемент с id="first"
+    let pGet = document.getElementById("first");
+    let pGet1 = document.getElementsByClassName("p");
 
 
-  alert(divs.length); // 1
+    console.log(paragraph11);
+
+    // node
+
+    console.log(paragraph);
+
+    console.log(paragraph1);
+    console.log(paragraph2);
+    console.log(paragraph2[0]);
+    console.log(pGet);
 
 
-</script>
+
+    paragraph.style.border = "2px solid red";           // меняем стили для элемента, задавая для свойства border значение 2 "px solid red"
+
+
+    let divs = document.getElementsByTagName('div');
+
+    let arr1 = [1, 2];
+
+    arr1 = [...paragraph2];
+    dfgsdf;
+
+
+    xfghsfg;
+
+    console.log(arr1);
+
+    // let o = {
+    //   : "qw"
+    // }
+
+    console.log(divs);
+
+    let arr = [...divs];
+
+    console.log(arr);
+
+
+    alert(divs.length); // 1
+
+
+  </script>
 </body>
 
 </html>
-
